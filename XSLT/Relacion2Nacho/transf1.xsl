@@ -64,11 +64,11 @@
                                     <xsl:value-of select="nombre"/>
                                     <xsl:text> </xsl:text>
                                     <xsl:value-of select="apellido"/>
-                                    </br>
+                                    <br/>
                               </xsl:for-each>
                                
                             </td>
-                            <!--
+                            
                             <td>
                                 <xsl:for-each select="editor">
                                     <xsl:value-of select="nombre"/> 
@@ -78,7 +78,7 @@
                               </xsl:for-each>
                             </td>
                         
-                        -->
+                        
                         </tr>
 
 
