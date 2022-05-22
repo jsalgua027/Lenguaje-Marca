@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="transf6.xsl"?>
+<?xml-stylesheet type="text/xsl" href="transf7.xsl"?>
 <tienda>
     <nombre>La tiendecilla</nombre>
     <telefono>953 87 12 23</telefono>
@@ -7,28 +7,33 @@
         <codigo>92</codigo>
         <cantidad>10</cantidad>
         <articulo>Radio-Casette</articulo>
+        <imagen>imagenes/radioCa.jpg</imagen>
     </producto>
     <producto>
         <codigo>101</codigo>
         <cantidad>3</cantidad>
         <articulo>Sofá</articulo>
+         <imagen>imagenes/sofa.jpg</imagen>
     </producto>
     <producto>
         <codigo>103</codigo>
         <cantidad>50</cantidad>
         <articulo>Reloj Cocina</articulo>
+         <imagen>imagenes/relojdecocina.jpg</imagen>
     </producto>
     <producto>
         <codigo>103</codigo>
         <cantidad>50</cantidad>
-        <articulo>Reloj Cocina</articulo>
+        <articulo>Reloj pared</articulo>
         <precio>100</precio>
+         <imagen>imagenes/relojpa.jpg</imagen>
     </producto>
     <producto>
         <codigo>103</codigo>
         <cantidad>50</cantidad>
-        <articulo>Reloj Cocina</articulo>
+        <articulo>Despertador</articulo>
         <precio>350</precio>
+         <imagen>imagenes/despertador.jpg</imagen>
 
     </producto>
 </tienda>

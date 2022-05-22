@@ -17,6 +17,7 @@
                     .verde{background-color:green}
                 .azul{background-color:blue}
                 .rojo{background-color:red}
+                img{widht:50px; height:50px}
                 </style>
             </head>
             
@@ -27,7 +28,6 @@
                         </tr>
                 <xsl:for-each select="tienda/producto">
                      <!-- la clase la pones en el td cuando quieres que ocupe toda la casilla-->
-                     <xsl:sort select="articulo" order="ascendig"></xsl:sort>
                      <tr>
                         <xsl:choose>
                           <xsl:when test="precio &lt;= 100">
@@ -38,6 +38,11 @@
                             <td  class="verde"><xsl:value-of select="articulo"/></td>
 
                             <td  class="verde"><xsl:value-of select="cantidad"/></td>
+                            <td><img>
+                                <xsl:attribute name="src">
+                                <xsl:value-of select="imagen"/>
+                                </xsl:attribute>
+                            </img></td>
 
                         </xsl:when>
                          <xsl:when test="precio &lt; 1000 ">
@@ -48,7 +53,11 @@
                             <td  class="azul"><xsl:value-of select="articulo"/></td>
 
                             <td  class="azul"><xsl:value-of select="cantidad"/></td>
-
+                            <td><img>
+                                <xsl:attribute name="src">
+                                <xsl:value-of select="imagen"/>
+                                 </xsl:attribute>
+                            </img></td>
                         </xsl:when>
 
                           <xsl:otherwise>
@@ -58,6 +67,11 @@
                              <td  class="rojo"><xsl:value-of select="articulo"/></td>
  
                              <td  class="rojo"><xsl:value-of select="cantidad"/></td>
+                             <td><img>
+                                <xsl:attribute name="src">
+                                <xsl:value-of select="imagen"/>
+                                 </xsl:attribute>
+                            </img></td>
 
                            </xsl:otherwise>
                       </xsl:choose>
