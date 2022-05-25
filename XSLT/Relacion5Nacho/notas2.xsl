@@ -17,6 +17,7 @@
                     .rojo{color: red}
                     .verde{color: green}
                     .amarillo{color: yellow}
+                    img{width:65px}
                 </style>
                
             </head>
@@ -27,11 +28,12 @@
 
                     <tr>
                         <th colspan="3"><b>datos</b></th>
-                        <th colspan="3"><b>Notas</b></th>
+                        <th colspan="4"><b>Notas</b></th>
                     </tr>
                     <tr>
                         <th><b>Nombre</b></th>
                         <th><b>Apellidos</b></th>
+                        <th><b>Fotos</b></th>
                         <th><b>Tareas</b></th>
                         <th><b>Cuestionarios</b></th>
                         <th><b>Examenes</b></th>
@@ -41,10 +43,16 @@
                    
                                          
                         <xsl:for-each select="notas/alumno">
-                        <xsl:if test="@convocatoria='Junio'">
+                        <xsl:if test="@convocatoria='Septiembre'">
                         <tr>
                             <td><xsl:value-of select="nombre"/></td>
                             <td><xsl:value-of select="apellidos"/></td>
+                            <td> <img>
+                                <xsl:attribute name="src">
+                                    <xsl:value-of select="imagen"/>
+                                </xsl:attribute>
+
+                            </img></td>
                             <td><xsl:value-of select="tareas"/></td>
                             <td><xsl:value-of select="cuestionarios"/></td>
                             <td><xsl:value-of select="examen"/></td>
