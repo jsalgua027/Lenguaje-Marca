@@ -1,30 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE discos [
-    <!ELEMENT  discos (grupo+, disco+)>
-    <!ATTLIST discos tienda  CDATA #FIXED "Discos 3000">
-    <!ELEMENT grupo (nombre, miembro,miembro,miembro,nacionalidad?,((web,email)|(calle,localidad))?)>
-    <!ATTLIST grupo nom ID #REQUIRED>
-    <!ELEMENT nombre (#PCDATA)>
-    <!ELEMENT miembro (#PCDATA)>
-    <!ELEMENT nacionalidad (#PCDATA)>
-    <!ELEMENT web (#PCDATA)>
-    <!ELEMENT email (#PCDATA)>
-    <!ELEMENT calle (#PCDATA)>
-    <!ELEMENT localidad (#PCDATA)>
-    <!ELEMENT disco (interprete,titulo,discografica?,anio,stock)>
-    <!ATTLIST disco precio CDATA #REQUIRED>
-    <!ELEMENT interprete EMPTY>
-    <!ATTLIST interprete grupo IDREF #REQUIRED>
-    <!ELEMENT anio (#PCDATA)>
-    <!ATTLIST anio  mes (enero | febrero | marzo | abril | mayo | junio | julio | agosto | septimbre | octubre | diciembre) #IMPLIED>
-    <!ELEMENT titulo (#PCDATA)>
-    <!ELEMENT discografica (#PCDATA)>
-    <!ELEMENT stock (#PCDATA)>
-
-
-
-]>
-
+<!DOCTYPE discos SYSTEM "discos.dtd">
 <discos tienda="Discos 3000">
     <grupo nom="muse">
         <nombre>MUSE</nombre>
