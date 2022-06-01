@@ -1,0 +1,24 @@
+body { 
+  background-color: lightgrey; 
+  font-family: sans-serif; 
+  border-top: 10px solid white;
+  border-left:10px solid white;
+  border-right:10px solid black;
+  border-bottom:10px solid black;
+}
+
+p {background-color: white; padding-right:50%}
+p {border-bottom: 2px solid black;
+ text-align: left;  border-right: 4px solid black;
+ margin-left:50px; margin-right:50px}
+strong {border-top: 2px solid black;
+        border-bottom: 2px solid black;}
+
+.primera{color: black; font-size: 50px;
+        background-color:lightgrey; padding-top: 2px;}
+
+i {background-color:lightgrey; color:white}
+
+h1 {border-bottom: 2px solid white;
+margin-left: 25px; margin-right: 25px; text-align: center;}
+.blanco{color:white}
