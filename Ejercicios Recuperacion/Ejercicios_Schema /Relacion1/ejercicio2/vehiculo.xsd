@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="vehiculos" type="tipoVehiculos"/>
+    <xs:complexType name="tipoVehiculos">
+        <xs:sequence>
+           <xs:element name="vehiculo" type="tipoVehicu"/>
+        </xs:sequence>
+    </xs:complexType>
+        
+    <xs:complexType name="tipoVehicu">
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string" minOccurs="1"/>
+            <xs:element name="modelo" type="xs:string" minOccurs="1"/>
+            <xs:element name="fabricacion" type="tipoFabri"/>
+            <xs:element name="modificaciones" type="tipoModi" minOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tipoFabri">
+        <xs:sequence>
+            <xs:element name="inicio" type="tipoInicio"/>
+            <xs:element name="fin"  type="tipoFin"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tipoModi">
+        <xs:sequence>
+            <xs:element name="modificacion" type="xs:string" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+
+    <xs:complexType name="tipoInicio">
+        <xs:sequence>
+            <xs:element name="dia" type="xs:string"/>
+            <xs:element name="mes" type="xs:string"/>
+            <xs:element name="anyo" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="tipoFin">
+        <xs:sequence>
+            <xs:element name="dia" type="xs:string"/>
+            <xs:element name="mes" type="xs:string"/>
+            <xs:element name="anyo" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+
+    
+</xs:schema>
